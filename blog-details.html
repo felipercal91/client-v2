@@ -16,214 +16,322 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <link href="css/blog.css" type="text/css" rel="stylesheet" />
   </head>
+
   <body>
     <div class="header-wrap">
       <div id="header-main">
         <div class="header row toprow">
-            <div class="col-md-3">
-              <a href="index.html"><img src="images/zurich-santner-logo.jpg" /></a>
-            </div>
-            <div class="col-md-9">
-              <ul class="header_right">
-                <li>
-                  <div class="search">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Quick Search"
-                    />
-                  </div>
-                </li>
-                <li><a href="#" class="newslink">Newsroom</a></li>
-                <li>
-                  <select class="selectpicker" data-width="fit">
-                    <option data-content="English">English</option>
-                    <option data-content="Español">Español</option>
-                  </select>
-                </li>
-                <li><img src="images/globe.png" /></li>
-              </ul>
-            </div>
+          <div class="col-md-3">
+            <a href="index.html"
+              ><img src="images/zurich-santner-logo.jpg"
+            /></a>
           </div>
-
-          <div id="header-area" class="header_area">
-            <div class="header_bottom">
-              <div class="container">
-                   <div class="col-md-12">
-                    <nav
-                    role="navigation"
-                    class="navbar navbar-expand-sm navbar-default navbar-light mainmenu"
-                  >
-                    <div class="navbar-header">
-                      <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarCollapse"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </div>
-                    <!-- Collection of nav links and other content for toggling -->
-                    <div id="navbarCollapse" class="collapse navbar-collapse">
-                      <ul id="fresponsive" class="nav navbar-nav dropdown">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="my-portfolio.html">My Portfolio</a></li>
-                        <li><a href="process.html">Process & Policies</a></li>
-                        <li><a href="learnings.html">Learnings</a></li>
-                        <li><a href="service-management.html">Service Management</a></li>
-                        <li><a href="reporting.html">Reporting</a></li>
-                      </ul>
-                    </div>
-                  </nav>
-                   </div>
+          <div class="col-md-9">
+            <ul class="header_right">
+              <li>
+                <div class="search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Búsqueda rápida"
+                  />
+                </div>
+              </li>
+              <li><a href="#" class="newslink">Sala de prensa</a></li>
+              <li>
+                <select class="selectpicker" data-width="fit">
+                  <option data-content="Inglés">Inglés</option>
+                  <option data-content="Español">Español</option>
+                </select>
+              </li>
+              <li><img src="images/globe.png" /></li>
+            </ul>
+          </div>
+        </div>
+        <div id="header-area" class="header_area">
+          <div class="header_bottom">
+            <div class="container">
+              <div class="col-md-12">
+                <nav
+                  role="navigation"
+                  class="navbar navbar-expand-sm navbar-default navbar-light mainmenu"
+                >
+                  <div class="navbar-header">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarCollapse"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <!-- Colección de enlaces de navegación y otro contenido para cambiar -->
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul id="fresponsive" class="nav navbar-nav dropdown">
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="my-portfolio.html">Mi Portafolio</a></li>
+                      <li><a href="process.html">Procesos y Políticas</a></li>
+                      <li><a href="learnings.html">Aprendizajes</a></li>
+                      <li>
+                        <a href="service-management.html"
+                          >Gestión de Servicio</a
+                        >
+                      </li>
+                      <li><a href="reporting.html">Informes</a></li>
+                    </ul>
+                  </div>
+                </nav>
               </div>
             </div>
-            <!-- /.header_bottom -->
           </div>
-
+          <!-- /.header_bottom -->
+        </div>
+      </div>
     </div>
-</div>
-
     <div class="fullpage-wrap">
       <div class="wrapper container">
         <div class="content">
-           <div class="breads">
-              Home >  Blog
-            </div>
-            <div class="container">
+          <div class="breads">Inicio > Blog</div>
+          <div class="container">
+            <div class="row">
+              <aside class="col-lg-3 sidebar mt-8 mt-lg-3">
+                <div class="widget">
+                  <form class="search-form">
+                    <div class="form-floating mb-0">
+                      <input
+                        id="search-form"
+                        type="text"
+                        class="form-control"
+                        placeholder="Buscar"
+                      />
+                      <label for="search-form">Buscar</label>
+                    </div>
+                  </form>
+                  <!-- /.search-form -->
+                </div>
+                <!-- /.widget -->
+                <div class="widget"></div>
+                <!-- /.widget -->
+                <div class="widget">
+                  <h4 class="widget-title mb-3">Publicaciones populares</h4>
+                  <ul class="image-list">
+                    <li>
+                      <div class="post-content">
+                        <h6 class="mb-2">
+                          <a class="link-dark" href="./blog-post.html"
+                            >Magna Mollis Ultricies</a
+                          >
+                        </h6>
+                        <ul class="post-meta">
+                          <li class="post-date">
+                            <i class="uil uil-calendar-alt"></i
+                            ><span>26 Mar 2022</span>
+                          </li>
+                          <li class="post-comments">
+                            <a href="#"><i class="uil uil-comment"></i>3</a>
+                          </li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="post-content">
+                        <h6 class="mb-2">
+                          <a class="link-dark" href="./blog-post.html"
+                            >Ornare Nullam Risus</a
+                          >
+                        </h6>
+                        <ul class="post-meta">
+                          <li class="post-date">
+                            <i class="uil uil-calendar-alt"></i
+                            ><span>16 Feb 2022</span>
+                          </li>
+                          <li class="post-comments">
+                            <a href="#"><i class="uil uil-comment"></i>6</a>
+                          </li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                    </li>
+                    <li>
+                      <div class="post-content">
+                        <h6 class="mb-2">
+                          <a class="link-dark" href="./blog-post.html"
+                            >Euismod Nullam Fusce</a
+                          >
+                        </h6>
+                        <ul class="post-meta">
+                          <li class="post-date">
+                            <i class="uil uil-calendar-alt"></i
+                            ><span>8 Jan 2022</span>
+                          </li>
+                          <li class="post-comments">
+                            <a href="#"><i class="uil uil-comment"></i>5</a>
+                          </li>
+                        </ul>
+                        <!-- /.post-meta -->
+                      </div>
+                    </li>
+                  </ul>
+                  <!-- /.image-list -->
+                </div>
+                <!-- /.widget -->
+                <div class="widget">
+                  <h4 class="widget-title mb-3">Categorías</h4>
+                  <ul class="unordered-list bullet-primary text-reset">
+                    <li><a href="#">Enfermedades (21)</a></li>
+                    <li><a href="#">Cuidado del bebé (19)</a></li>
+                    <li><a href="#">Espacio de trabajo (16)</a></li>
+                    <li><a href="#">Planes de salud (7)</a></li>
+                    <li><a href="#">Cómo elegir un plan de salud (12)</a></li>
+                    <li><a href="#">Consejos de ahorro (14)</a></li>
+                  </ul>
+                </div>
+                <!-- /.widget -->
+                <div class="widget">
+                  <h4 class="widget-title mb-3">Etiquetas</h4>
+                  <ul class="list-unstyled tag-list">
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Naturaleza muerta</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Urbano</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Naturaleza</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Paisaje</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Macro</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Diversión</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Taller</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#" class="btn btn-soft-ash btn-sm rounded-pill"
+                        >Fotografía</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <!-- /.widget -->
+                <div class="widget">
+                  <h4 class="widget-title mb-3">Archivo</h4>
+                  <ul class="unordered-list bullet-primary text-reset">
+                    <li><a href="#">Febrero 2019</a></li>
+                    <li><a href="#">Enero 2019</a></li>
+                    <li><a href="#">Diciembre 2018</a></li>
+                    <li><a href="#">Noviembre 2018</a></li>
+                    <li><a href="#">Octubre 2018</a></li>
+                  </ul>
+                </div>
+                <!-- /.widget -->
+              </aside>
 
-              <div class="row">
-                <aside class="col-lg-3 sidebar mt-8 mt-lg-3">
-                    <div class="widget">
-                      <form class="search-form">
-                        <div class="form-floating mb-0">
-                          <input id="search-form" type="text" class="form-control" placeholder="Search">
-                          <label for="search-form">Search</label>
-                        </div>
-                      </form>
-                      <!-- /.search-form -->
-                    </div>
-                    <!-- /.widget -->
-                    <div class="widget">
-                    </div>
-                    <!-- /.widget -->
-                    <div class="widget">
-                      <h4 class="widget-title mb-3">Popular Posts</h4>
-                      <ul class="image-list">
-                        <li>
-                          <div class="post-content">
-                            <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Magna Mollis Ultricies</a> </h6>
-                            <ul class="post-meta">
-                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>26 Mar 2022</span></li>
-                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>3</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                          </div>
-                        </li>
-                        <li>
-                          <div class="post-content">
-                            <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Ornare Nullam Risus</a> </h6>
-                            <ul class="post-meta">
-                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>16 Feb 2022</span></li>
-                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>6</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                          </div>
-                        </li>
-                        <li>
-                          <div class="post-content">
-                            <h6 class="mb-2"> <a class="link-dark" href="./blog-post.html">Euismod Nullam Fusce</a> </h6>
-                            <ul class="post-meta">
-                              <li class="post-date"><i class="uil uil-calendar-alt"></i><span>8 Jan 2022</span></li>
-                              <li class="post-comments"><a href="#"><i class="uil uil-comment"></i>5</a></li>
-                            </ul>
-                            <!-- /.post-meta -->
-                          </div>
-                        </li>
-                      </ul>
-                      <!-- /.image-list -->
-                    </div>
-                    <!-- /.widget -->
-                    <div class="widget">
-                      <h4 class="widget-title mb-3">Categories</h4>
-                      <ul class="unordered-list bullet-primary text-reset">
-                        <li><a href="#">Diseases (21)</a></li>
-                        <li><a href="#">Baby Care (19)</a></li>
-                        <li><a href="#">Workspace (16)</a></li>
-                        <li><a href="#">Health Plans (7)</a></li>
-                        <li><a href="#">How to choose health plan (12)</a></li>
-                        <li><a href="#">Saving Tips (14)</a></li>
-                      </ul>
-                    </div>
-                    <!-- /.widget -->
-                    <div class="widget">
-                      <h4 class="widget-title mb-3">Tags</h4>
-                      <ul class="list-unstyled tag-list">
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Still Life</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Urban</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Nature</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Landscape</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Macro</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Fun</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Workshop</a></li>
-                        <li><a href="#" class="btn btn-soft-ash btn-sm rounded-pill">Photography</a></li>
-                      </ul>
-                    </div>
-                    <!-- /.widget -->
-                    <div class="widget">
-                      <h4 class="widget-title mb-3">Archive</h4>
-                      <ul class="unordered-list bullet-primary text-reset">
-                        <li><a href="#">February 2019</a></li>
-                        <li><a href="#">January 2019</a></li>
-                        <li><a href="#">December 2018</a></li>
-                        <li><a href="#">November 2018</a></li>
-                        <li><a href="#">October 2018</a></li>
-                      </ul>
-                    </div>
-                    <!-- /.widget -->
-                  </aside>
-
-                  <div class="col-lg-9 order-lg-2">
-                    <div class="blog classic-view mt-3">
-
-                        <section class="blog-details">
-                            <article class="info-box">
-                            <h6 class="subhead">Health Tips</h6>
-                            <h1 class="mainhead2">Malaria and Pregnancy: Risks and Prevention Strategies for Expectant Mothers</h1>
-                            <aside class="img-sec"><img src="images/blog-img1.jpg" alt="blog-01"></aside>
-                            <div class="pera">
-                                <p>Malaria is a life-threatening disease that is caused by parasites transmitted to humans through the bite of infected female mosquitoes. Malaria during pregnancy is a significant public health problem, particularly in areas with high transmission rates. In this blog, let's discuss the risks of malaria for pregnant women and their unborn children and the best practices for preventing and treating malaria during pregnancy.</p>
-                            </div>
-                            <h3>Risks of Malaria during Pregnancy
-                            </h3>
-                            <div class="pera">
-                                <p>Malaria is a life-threatening disease that is caused by parasites transmitted to humans through the bite of infected female mosquitoes. Malaria during pregnancy is a significant public health problem, particularly in areas with high transmission rates. In this blog, let's discuss the risks of malaria for pregnant women and their unborn children and the best practices for preventing and treating malaria during pregnancy.</p>
-                            </div>
-                            <div class="pera">
-                                <p>Malaria is a life-threatening disease that is caused by parasites transmitted to humans through the bite of infected female mosquitoes. Malaria during pregnancy is a significant public health problem, particularly in areas with high transmission rates. In this blog, let's discuss the risks of malaria for pregnant women and their unborn children and the best practices for preventing and treating malaria during pregnancy.</p>
-                            </div>
-                            <div class="pera">
-                                <p>Malaria is a life-threatening disease that is caused by parasites transmitted to humans through the bite of infected female mosquitoes. Malaria during pregnancy is a significant public health problem, particularly in areas with high transmission rates. In this blog, let's discuss the risks of malaria for pregnant women and their unborn children and the best practices for preventing and treating malaria during pregnancy.</p>
-                            </div>
-
-                            </article>
-                        </section>
-
-                    </div>
-                    <!-- /.blog -->
-                  </div>
+              <div class="col-lg-9 order-lg-2">
+                <div class="blog classic-view mt-3">
+                  <section class="blog-details">
+                    <article class="info-box">
+                      <h6 class="subhead">Consejos de salud</h6>
+                      <h1 class="mainhead2">
+                        Malaria y embarazo: riesgos y estrategias de prevención
+                        para mujeres embarazadas
+                      </h1>
+                      <aside class="img-sec">
+                        <img src="images/blog-img1.jpg" alt="blog-01" />
+                      </aside>
+                      <div class="pera">
+                        <p>
+                          La malaria es una enfermedad potencialmente mortal que
+                          es causada por parásitos transmitidos a los seres
+                          humanos a través de la picadura de mosquitos hembra
+                          infectados. La malaria durante el embarazo es un
+                          problema importante de salud pública, especialmente en
+                          áreas con altas tasas de transmisión. En este blog,
+                          discutiremos los riesgos de la malaria para las
+                          mujeres embarazadas y sus hijos por nacer, así como
+                          las mejores prácticas para prevenir y tratar la
+                          malaria durante el embarazo.
+                        </p>
+                      </div>
+                      <h3>Riesgos de la malaria durante el embarazo</h3>
+                      <div class="pera">
+                        <p>
+                          La malaria es una enfermedad potencialmente mortal que
+                          es causada por parásitos transmitidos a los seres
+                          humanos a través de la picadura de mosquitos hembra
+                          infectados. La malaria durante el embarazo es un
+                          problema importante de salud pública, especialmente en
+                          áreas con altas tasas de transmisión. En este blog,
+                          discutiremos los riesgos de la malaria para las
+                          mujeres embarazadas y sus hijos por nacer, así como
+                          las mejores prácticas para prevenir y tratar la
+                          malaria durante el embarazo.
+                        </p>
+                      </div>
+                      <div class="pera">
+                        <p>
+                          La malaria es una enfermedad potencialmente mortal que
+                          es causada por parásitos transmitidos a los seres
+                          humanos a través de la picadura de mosquitos hembra
+                          infectados. La malaria durante el embarazo es un
+                          problema importante de salud pública, especialmente en
+                          áreas con altas tasas de transmisión. En este blog,
+                          discutiremos los riesgos de la malaria para las
+                          mujeres embarazadas y sus hijos por nacer, así como
+                          las mejores prácticas para prevenir y tratar la
+                          malaria durante el embarazo.
+                        </p>
+                      </div>
+                      <div class="pera">
+                        <p>
+                          La malaria es una enfermedad potencialmente mortal que
+                          es causada por parásitos transmitidos a los seres
+                          humanos a través de la picadura de mosquitos hembra
+                          infectados. La malaria durante el embarazo es un
+                          problema importante de salud pública, especialmente en
+                          áreas con altas tasas de transmisión. En este blog,
+                          discutiremos los riesgos de la malaria para las
+                          mujeres embarazadas y sus hijos por nacer, así como
+                          las mejores prácticas para prevenir y tratar la
+                          malaria durante el embarazo.
+                        </p>
+                      </div>
+                    </article>
+                  </section>
+                </div>
+                <!-- /.blog -->
               </div>
-
             </div>
+          </div>
         </div>
         <div class="footer">
           <a href=""><img src="images/ustlogo.png" /></a>
           <div style="float: right; font-size: 11px; text-align: right">
-            Confidential & Proprietory. &copy; 2023 UST Global Inc.
+            Confidencial y Propietario. &copy; 2023 UST Global Inc.
           </div>
         </div>
       </div>
@@ -252,8 +360,6 @@
 
           return false;
         });
-
-
       })(jQuery);
     </script>
   </body>

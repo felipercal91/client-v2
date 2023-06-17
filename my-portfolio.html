@@ -1,428 +1,765 @@
 <!DOCTYPE html>
 <html class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="kpmgicon.ico" type="image" />
+    <title>Zurich Santander</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="" />
-  <meta name="author" content="" />
-  <link rel="shortcut icon" href="kpmgicon.ico" type="image" />
-  <title>Zurich Santander</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" type="text/css"
-    rel="stylesheet" />
-  <link href="css/styles.css" type="text/css" rel="stylesheet" />
-</head>
-
-<body>
-
-  <div class="header-wrap">
-    <div id="header-main">
-      <div class="header row toprow">
-        <div class="col-md-3">
-          <a href="index.html"><img src="images/zurich-santner-logo.jpg" /></a>
+  <body>
+    <div class="header-wrap">
+      <div id="header-main">
+        <div class="header row toprow">
+          <div class="col-md-3">
+            <a href="index.html"
+              ><img src="images/zurich-santner-logo.jpg"
+            /></a>
+          </div>
+          <div class="col-md-9">
+            <ul class="header_right">
+              <li>
+                <div class="search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Búsqueda rápida"
+                  />
+                </div>
+              </li>
+              <li><a href="#" class="newslink">Sala de prensa</a></li>
+              <li>
+                <select class="selectpicker" data-width="fit">
+                  <option data-content="Inglés">Inglés</option>
+                  <option data-content="Español">Español</option>
+                </select>
+              </li>
+              <li><img src="images/globe.png" /></li>
+            </ul>
+          </div>
         </div>
-        <div class="col-md-9">
-          <ul class="header_right">
-            <li>
-              <div class="search">
-                <input type="text" class="form-control" placeholder="Quick Search" />
+        <div id="header-area" class="header_area">
+          <div class="header_bottom">
+            <div class="container">
+              <div class="col-md-12">
+                <nav
+                  role="navigation"
+                  class="navbar navbar-expand-sm navbar-default navbar-light mainmenu"
+                >
+                  <div class="navbar-header">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarCollapse"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <!-- Collection of nav links and other content for toggling -->
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul id="fresponsive" class="nav navbar-nav dropdown">
+                      <li><a href="index.html">Inicio</a></li>
+                      <li class="active">
+                        <a href="my-portfolio.html">Mi Portafolio</a>
+                      </li>
+                      <li><a href="process.html">Proceso y Políticas</a></li>
+                      <li><a href="learnings.html">Aprendizajes</a></li>
+                      <li>
+                        <a href="service-management.html"
+                          >Gestión de Servicios</a
+                        >
+                      </li>
+                      <li><a href="reporting.html">Informes</a></li>
+                    </ul>
+                  </div>
+                </nav>
               </div>
-            </li>
-            <li><a href="#" class="newslink">Newsroom</a></li>
-            <li>
-              <select class="selectpicker" data-width="fit">
-                <option data-content="English">English</option>
-                <option data-content="Español">Español</option>
-              </select>
-            </li>
-            <li><img src="images/globe.png" /></li>
-          </ul>
+            </div>
+          </div>
+          <!-- /.header_bottom -->
         </div>
       </div>
-
-      <div id="header-area" class="header_area">
-        <div class="header_bottom">
+    </div>
+    <div class="fullpage-wrap">
+      <div class="wrapper container">
+        <div class="content">
+          <div class="breads">Inicio > Mi Portafolio</div>
           <div class="container">
-            <div class="col-md-12">
-              <nav role="navigation" class="navbar navbar-expand-sm navbar-default navbar-light mainmenu">
-                <div class="navbar-header">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                </div>
-                <!-- Collection of nav links and other content for toggling -->
-                <div id="navbarCollapse" class="collapse navbar-collapse">
-                  <ul id="fresponsive" class="nav navbar-nav dropdown">
-                    <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="my-portfolio.html">My Portfolio</a></li>
-                    <li><a href="process.html">Process & Policies</a></li>
-                    <li><a href="learnings.html">Learnings</a></li>
-                    <li><a href="service-management.html">Service Management</a></li>
-                    <li><a href="reporting.html">Reporting</a></li>
+            <br />
+            <div class="tab-wrap">
+              <div class="row">
+                <div class="col-3 navlft-tabs" id="navlft-tb">
+                  <ul class="nav nav-tabs flex-row" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="first-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#first-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="first-tab-pane"
+                        aria-selected="true"
+                      >
+                        Maestros
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="second-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#second-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="second-tab-pane"
+                        aria-selected="false"
+                      >
+                        Taller de productos
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="third-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#third-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="third-tab-pane"
+                        aria-selected="false"
+                      >
+                        Ventas
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#fourth-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Personas
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fifth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#fifth-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fifth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Gestión de Portafolio
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="sixth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#sixth-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="sixth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Reclamos
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="seventh-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#seventh-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="seventh-tab-pane"
+                        aria-selected="false"
+                      >
+                        Actuarial de Pagos
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="eight-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#eight-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="eight-tab-pane"
+                        aria-selected="false"
+                      >
+                        Reaseguro y coaseguro
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nine-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Seguridad
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#ten-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Planificador
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#eleven-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Gestión de Procesos
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#twelve-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Estadísticas
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#thirteen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Conexiones Externas
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#fourteen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Gestión de Documentos
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#fifteen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Firma Digital
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#sixteen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Terminal Financiera
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#seventeen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Plataforma de Intermediarios
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#eighteen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Biblioteca Gubernamental
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#nineteen-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Portal de Informes SLA
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="fourth-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#twenty-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="fourth-tab-pane"
+                        aria-selected="false"
+                      >
+                        Infraestructura
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="twentyone-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#twentyone-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="twentyone-tab-pane"
+                        aria-selected="false"
+                      >
+                        Gestión de Cumplimiento
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="twentytwo-tab"
+                        data-bs-toggle="tab"
+                        data-bs-target="#twentytwo-tab-pane"
+                        type="button"
+                        role="tab"
+                        aria-controls="twentytwo-tab-pane"
+                        aria-selected="false"
+                      >
+                        Talleres y Capacitación
+                      </button>
+                    </li>
                   </ul>
                 </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-        <!-- /.header_bottom -->
-      </div>
+                <div class="col-9 px-0">
+                  <div class="search-wrap d-flex justify-content-between">
+                    <h1>Mi Portafolio</h1>
+                    <form class="d-flex justify-content-right pb-3">
+                      <input type="text" placeholder="Buscar" />
+                      <button>
+                        <svg
+                          aria-labelledby="title desc"
+                          role="img"
+                          xmlns="http://www.w3.org/2000/svg"
+                          viewBox="0 0 19.9 19.7"
+                        >
+                          <g class="search-path" fill="none" stroke="#fff">
+                            <path
+                              stroke-linecap="square"
+                              d="M18.5 18.3l-5.4-5.4"
+                            />
+                            <circle cx="8" cy="7" r="6" />
+                          </g>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                  <div class="tab-content links-all" id="myTabContent">
+                    <div
+                      class="tab-pane fade show active"
+                      id="first-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="first-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Configuración</a></li>
+                          <li>
+                            <a href="#">Tablas Maestras</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="second-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="second-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li>
+                            <a href="#">Configuración</a>
+                          </li>
+                          <li><a href="#">Gestor de Fórmulas</a></li>
+                          <li><a href="#">Duplicación de Productos</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="third-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="third-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Red de Ventas</a></li>
+                          <li>
+                            <a href="#">Gestión de Comisiones</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="fourth-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="fourth-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Datos Únicos</a></li>
+                          <li><a href="#">Posición Global</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="fifth-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="fifth-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li>
+                            <a href="#">Cotización/Subscripción/Renovación</a>
+                          </li>
+                          <li>
+                            <a href="#">Cancelaciones/Rehabilitaciones</a>
+                          </li>
+                          <li><a href="#">Procesos de Cierre</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="sixth-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="sixth-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Reporte de Reclamos</a></li>
+                          <li><a href="#">Consulta/Gestión</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="seventh-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="seventh-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Reconocimiento de Reservas</a></li>
+                          <li><a href="#">Cálculo de Provisiones</a></li>
+                        </ul>
+                      </div>
+                    </div>
 
-    </div>
-  </div>
-
-  <div class="fullpage-wrap">
-    <div class="wrapper container">
-      <div class="content">
-        <div class="breads">
-          Home > My Portfolio
-        </div>
-        <div class="container">
-          <br>
-          <div class="tab-wrap">
-            <div class="row">
-              <div class="col-3 navlft-tabs" id="navlft-tb">
-                <ul class="nav nav-tabs flex-row" id="myTab" role="tablist">
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="first-tab" data-bs-toggle="tab" data-bs-target="#first-tab-pane"
-                      type="button" role="tab" aria-controls="first-tab-pane" aria-selected="true">Masters </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="second-tab" data-bs-toggle="tab" data-bs-target="#second-tab-pane"
-                      type="button" role="tab" aria-controls="second-tab-pane" aria-selected="false">Product
-                      Workshop</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="third-tab" data-bs-toggle="tab" data-bs-target="#third-tab-pane"
-                      type="button" role="tab" aria-controls="third-tab-pane" aria-selected="false">Sales </button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourth-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">People</button>
-                  </li>
-
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fifth-tab" data-bs-toggle="tab" data-bs-target="#fifth-tab-pane"
-                      type="button" role="tab" aria-controls="fifth-tab-pane" aria-selected="false">Portfolio
-                      Management</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="sixth-tab" data-bs-toggle="tab" data-bs-target="#sixth-tab-pane"
-                      type="button" role="tab" aria-controls="sixth-tab-pane" aria-selected="false">Claims</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="seventh-tab" data-bs-toggle="tab" data-bs-target="#seventh-tab-pane"
-                      type="button" role="tab" aria-controls="seventh-tab-pane" aria-selected="false">Payments
-                      Actuarial</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="eight-tab" data-bs-toggle="tab" data-bs-target="#eight-tab-pane"
-                      type="button" role="tab" aria-controls="eight-tab-pane" aria-selected="false">Reinsurance and
-                      Co-insurance</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#nine-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Security</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#ten-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Planner</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#eleven-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Process
-                      Management</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#twelve-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Statistics</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#thirteen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">External
-                      Connections</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fourteen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Document
-                      Management</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#fifteen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Digital
-                      Signature</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#sixteen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Financial
-                      Terminal</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#seventeen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Intermediaries
-                      Platform</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#eighteen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">Government
-                      Library</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#nineteen-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane" aria-selected="false">SLA Reporting
-                      Portal</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="fourth-tab" data-bs-toggle="tab" data-bs-target="#twenty-tab-pane"
-                      type="button" role="tab" aria-controls="fourth-tab-pane"
-                      aria-selected="false">Infrastructure</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="twentyone-tab" data-bs-toggle="tab"
-                      data-bs-target="#twentyone-tab-pane" type="button" role="tab" aria-controls="twentyone-tab-pane"
-                      aria-selected="false">Compliance Management</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="twentytwo-tab" data-bs-toggle="tab"
-                      data-bs-target="#twentytwo-tab-pane" type="button" role="tab" aria-controls="twentytwo-tab-pane"
-                      aria-selected="false">Workshops and Training</button>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-9 px-0">
-                <div class="search-wrap d-flex justify-content-between">
-                  <h1>My Portfolio</h1>
-                  <form class="d-flex justify-content-right pb-3">
-                    <input type="text" placeholder="Search" />
-                    <button>
-                      <svg aria-labelledby="title desc" role="img" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 19.9 19.7">
-                        <g class="search-path" fill="none" stroke="#fff">
-                          <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
-                          <circle cx="8" cy="7" r="6" />
-                        </g>
-                      </svg>
-                    </button>
-                  </form>
-                </div>
-                <div class="tab-content links-all" id="myTabContent">
-                  <div class="tab-pane fade show active" id="first-tab-pane" role="tabpanel" aria-labelledby="first-tab"
-                    tabindex="0">
-
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Configuration</a></li>
-                        <li>
-                          <a href="#">Master Tables</a>
-                        </li>
-                      </ul>
+                    <div
+                      class="tab-pane fade"
+                      id="eight-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="eight-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Definición de Contratos</a></li>
+                          <li>
+                            <a href="#">Procesos de Liquidación y Cierre</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nine-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="nine-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Administración de Usuarios</a></li>
+                          <li><a href="#">Roles/Acciones</a></li>
+                          <li><a href="#">Configuración de Pantallas</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="ten-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="ten-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="eleven-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="eleven-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="twelve-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="twelve-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Almacén de Datos</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="thirteen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="thirteen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Axisconnect</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="fourteen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="fourteen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Gedox</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="fifteen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="fifteen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="sixteen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="sixteen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="seventeen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="seventeen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="eighteen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="eighteen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Plan de Comunicación</a></li>
+                          <li><a href="#">RACI</a></li>
+                          <li><a href="#">Gestión de Cambios</a></li>
+                          <li><a href="#">Gestión de Riesgos</a></li>
+                          <li><a href="#">Plan de Calidad</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="nineteen-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="nineteen-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">
+                        <ul class="flex-container">
+                          <li><a href="#">Métricas</a></li>
+                          <li><a href="#">Informes</a></li>
+                          <li><a href="#">Entregables</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="twenty-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="twenty-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="twentyone-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="twentyone-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="twentytwo-tab-pane"
+                      role="tabpanel"
+                      aria-labelledby="twentytwo-tab"
+                      tabindex="0"
+                    >
+                      <div class="page-links">-</div>
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="second-tab-pane" role="tabpanel" aria-labelledby="second-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li>
-                          <a href="#">Configuration</a>
-                        </li>
-                        <li><a href="#">Formula Manager</a></li>
-                        <li><a href="#">Product Duplication</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="third-tab-pane" role="tabpanel" aria-labelledby="third-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Sales Network</a></li>
-                        <li>
-                          <a href="#">Commission Management</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="fourth-tab-pane" role="tabpanel" aria-labelledby="fourth-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Unique Data</a></li>
-                        <li><a href="#">Global Position</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="fifth-tab-pane" role="tabpanel" aria-labelledby="fifth-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Quote/subscription/Renewal</a></li>
-                        <li><a href="#">Cancellations/Rehabilitations</a></li>
-                        <li><a href="#">Closing Processes</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="sixth-tab-pane" role="tabpanel" aria-labelledby="sixth-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Claims Reporting</a></li>
-                        <li><a href="#">Query/Management</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="seventh-tab-pane" role="tabpanel" aria-labelledby="seventh-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Recognition of reserves</a></li>
-                        <li><a href="#">Calculation of provisions</a></li>
-                      </ul>
-                    </div>
-                  </div>
-
-                  <div class="tab-pane fade" id="eight-tab-pane" role="tabpanel" aria-labelledby="eight-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Definition of Contracts</a></li>
-                        <li><a href="#">Settlement and closing Processes</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="nine-tab-pane" role="tabpanel" aria-labelledby="nine-tab" tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">User Administration</a></li>
-                        <li><a href="#">Roles/Actions</a></li>
-                        <li><a href="#">Screen Configuration</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="ten-tab-pane" role="tabpanel" aria-labelledby="ten-tab" tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="eleven-tab-pane" role="tabpanel" aria-labelledby="eleven-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="twelve-tab-pane" role="tabpanel" aria-labelledby="twelve-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Data Warehouse</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="thirteen-tab-pane" role="tabpanel" aria-labelledby="thirteen-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Axisconnect</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="fourteen-tab-pane" role="tabpanel" aria-labelledby="fourteen-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Gedox</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="fifteen-tab-pane" role="tabpanel" aria-labelledby="fifteen-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="sixteen-tab-pane" role="tabpanel" aria-labelledby="sixteen-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="seventeen-tab-pane" role="tabpanel" aria-labelledby="seventeen-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="eighteen-tab-pane" role="tabpanel" aria-labelledby="eighteen-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Communication Plan</a></li>
-                        <li><a href="#">RACI</a></li>
-                        <li><a href="#">Change Management</a></li>
-                        <li><a href="#">Risk Management</a></li>
-                        <li><a href="#">Quality Plan</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="nineteen-tab-pane" role="tabpanel" aria-labelledby="nineteen-tab"
-                    tabindex="0">
-                    <div class="page-links">
-                      <ul class="flex-container">
-                        <li><a href="#">Metrics</a></li>
-                        <li><a href="#">Reports</a></li>
-                        <li><a href="#">Deliverables</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="tab-pane fade" id="twenty-tab-pane" role="tabpanel" aria-labelledby="twenty-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="twentyone-tab-pane" role="tabpanel" aria-labelledby="twentyone-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-                  <div class="tab-pane fade" id="twentytwo-tab-pane" role="tabpanel" aria-labelledby="twentytwo-tab"
-                    tabindex="0">
-                    <div class="page-links">-</div>
-                  </div>
-
                 </div>
               </div>
             </div>
           </div>
-
-
-
-
         </div>
-      </div>
-      <div class="footer">
-        <a href=""><img src="images/ustlogo.png" /></a>
-        <div style="float: right; font-size: 11px; text-align: right">
-          Confidential & Proprietory. &copy; 2023 UST Global Inc.
+        <div class="footer">
+          <a href=""><img src="images/ustlogo.png" /></a>
+          <div style="float: right; font-size: 11px; text-align: right">
+            Confidencial y Propietario. &copy; 2023 UST Global Inc.
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      (function ($) {
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          if (!$(this).next().hasClass("show")) {
+            $(this)
+              .parents(".dropdown-menu")
+              .first()
+              .find(".show")
+              .removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-  <script>
-    (function ($) {
-      $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
-        if (!$(this).next().hasClass("show")) {
           $(this)
-            .parents(".dropdown-menu")
-            .first()
-            .find(".show")
-            .removeClass("show");
-        }
-        var $subMenu = $(this).next(".dropdown-menu");
-        $subMenu.toggleClass("show");
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-submenu .show").removeClass("show");
+            });
 
-        $(this)
-          .parents("li.nav-item.dropdown.show")
-          .on("hidden.bs.dropdown", function (e) {
-            $(".dropdown-submenu .show").removeClass("show");
-          });
-
-        return false;
-      });
-
-
-    })(jQuery);
-  </script>
-</body>
-
+          return false;
+        });
+      })(jQuery);
+    </script>
+  </body>
 </html>

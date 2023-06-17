@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html class="h-100">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="kpmgicon.ico" type="image" />
+    <title>Zurich Santander</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+    <link href="css/blog.css" type="text/css" rel="stylesheet" />
+    <script>
+        // Function to translate to Spanish
+        function translateToSpanish() {
+            // Change the content to Spanish
+            $("h1").text("Bienvenido");
+            $("a.newslink").text("Sala de prensa");
+            $("li.active > a").text("Inicio");
+            $("li:not(.active) > a[href='my-portfolio.html']").text("Mi Portafolio");
+            $("li:not(.active) > a[href='process.html']").text("Procesos y Políticas");
+            $("li:not(.active) > a[href='learnings.html']").text("Aprendizaje");
+            $("li:not(.active) > a[href='service-management.html']").text("Gestión de Servicios");
+            $("li:not(.active) > a[href='reporting.html']").text("Informes");
+
+
+            // Optionally, you can update attributes as well
+            $("img").attr("alt", "Descripción en español");
+
+            // Add more attribute updates as needed
+
+            // Add a class to the body to apply specific styling for Spanish content
+            $("body").addClass("español");
+
+            // Store the selected language in local storage
+            localStorage.setItem("selectedLanguage", "español");
+        }
+
+
+        // Function to translate to English
+        function translateToEnglish() {
+            // Reset the content to English
+            $("h1").text("Learnings");
+
+            // Reset attributes if needed
+            $("img").attr("alt", "English description");
+
+            // Remove the "español" class from the body
+            $("body").removeClass("español");
+
+            // Store the selected language in local storage
+            localStorage.setItem("selectedLanguage", "english");
+        }
+
+        // Function to apply the translation based on the selected language
+        function applyTranslation() {
+            var selectedLanguage = localStorage.getItem("selectedLanguage");
+            if (selectedLanguage === "español") {
+                translateToSpanish();
+            } else {
+                translateToEnglish();
+            }
+        }
+
+        // Retrieve the selected language from local storage on page load
+        window.onload = applyTranslation;
+    </script>
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div id="header-main">
+            <div class="header row toprow">
+                <div class="col-md-3">
+                    <a href="index.html"><img src="images/zurich-santner-logo.jpg" /></a>
+                </div>
+                <div class="col-md-9">
+                    <ul class="header_right">
+                        <li>
+                            <div class="search">
+                                <input type="text" class="form-control" placeholder="Quick Search" />
+                            </div>
+                        </li>
+                        <li><a href="#" class="newslink">Newsroom</a></li>
+                        <li>
+                            <select class="selectpicker" data-width="fit">
+                    <option data-content="English">English</option>
+                    <option data-content="Español">Español</option>
+                  </select>
+                        </li>
+                        <li><img src="images/globe.png" /></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="header-area" class="header_area">
+                <div class="header_bottom">
+                    <div class="container">
+                        <div class="col-md-12">
+                            <nav role="navigation" class="navbar navbar-expand-sm navbar-default navbar-light mainmenu">
+                                <div class="navbar-header">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                                </div>
+                                <!-- Collection of nav links and other content for toggling -->
+                                <div id="navbarCollapse" class="collapse navbar-collapse">
+                                    <ul id="fresponsive" class="nav navbar-nav dropdown">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="my-portfolio.html">My Portfolio</a></li>
+                                        <li><a href="process.html">Process & Policies</a></li>
+                                        <li class="active"><a href="learnings.html">Learnings</a></li>
+                                        <li><a href="service-management.html">Service Management</a></li>
+                                        <li><a href="reporting.html">Reporting</a></li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.header_bottom -->
+            </div>
+
+        </div>
+    </div>
+
+    <div class="fullpage-wrap">
+        <div class="wrapper container">
+            <div class="content">
+                <div class="breads">
+                    Home > Learnings
+                </div>
+
+                <div class="search-wrap2 d-flex justify-content-between">
+                    <h1>Learnings</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="icon-card">
+                            <a href="application-owner.html">
+                                <span class="icon">
+                          <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 width="45px" height="50px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve">
+<g>
+	<path fill="#231F20" d="M60,3.999H35v-1c0-1.657-1.343-3-3-3s-3,1.343-3,3v1H4c-2.211,0-4,1.789-4,4v38c0,2.211,1.789,4,4,4h19.888
+		l-5.485,9.5c-0.829,1.435-0.338,3.27,1.098,4.098s3.27,0.337,4.098-1.098l7.217-12.5h2.37l7.217,12.5
+		c0.829,1.436,2.663,1.927,4.099,1.098c1.436-0.828,1.926-2.662,1.098-4.098l-5.485-9.5H60c2.211,0,4-1.789,4-4v-38
+		C64,5.788,62.211,3.999,60,3.999z M31,2.999c0-0.553,0.447-1,1-1s1,0.447,1,1v1h-2V2.999z M21.866,61.499
+		c-0.276,0.479-0.888,0.643-1.366,0.365c-0.479-0.275-0.643-0.887-0.365-1.365l6.062-10.5h2.309L21.866,61.499z M43.865,60.499
+		c0.277,0.479,0.113,1.09-0.365,1.366s-1.09,0.112-1.366-0.366l-6.64-11.5h2.309L43.865,60.499z M62,45.999c0,1.104-0.896,2-2,2H4
+		c-1.104,0-2-0.896-2-2v-38c0-1.104,0.896-2,2-2h56c1.104,0,2,0.896,2,2V45.999z"/>
+	<path fill="#231F20" d="M35,17.999h-6c-0.553,0-1,0.447-1,1v25h8v-25C36,18.446,35.553,17.999,35,17.999z M34,41.999h-4v-8h4
+		V41.999z M34,31.999h-4v-12h4V31.999z"/>
+	<path fill="#231F20" d="M47,9.999h-6c-0.553,0-1,0.447-1,1v33h8v-33C48,10.446,47.553,9.999,47,9.999z M46,41.999h-4v-10h4V41.999z
+		 M46,29.999h-4v-18h4V29.999z"/>
+	<path fill="#231F20" d="M23,25.999h-6c-0.553,0-1,0.447-1,1v17h8v-17C24,26.446,23.553,25.999,23,25.999z M22,41.999h-4v-6h4
+		V41.999z M22,33.999h-4v-6h4V33.999z"/>
+</g>
+</svg>
+                        </span>
+                                <span class="text-link">Propietario de la aplicación</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-card">
+                            <a href="employee.html">
+                                <span class="icon">
+                        <svg fill="#000000" height="55px" width="55px" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 511 511" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 511 511">
+							<g>
+							  <path d="m503.5,436h-103.705c7.13-9.007 9.992-20.574 7.837-31.891l-21.252-111.577c-2.674-14.037-12.756-25.563-26.312-30.082l-54.196-18.065c-0.954-0.318-1.927-0.43-2.872-0.366v-14.399c10.341-11.62 16-26.396 16-42.12v-17.734c9.29-3.138 16-11.93 16-22.266v-40c0-26.191-21.309-47.5-47.5-47.5h-64c-10.584,0-19.557,7.033-22.489,16.672-14.267,2.999-25.011,15.682-25.011,30.828v40c0,10.335 6.71,19.127 16,22.266v15.387c0,16.529 6.063,31.796 16,43.459v15.407c-0.945-0.063-1.917,0.048-2.872,0.367l-54.196,18.065c-13.556,4.519-23.638,16.045-26.312,30.082l-21.252,111.577c-2.156,11.317 0.707,22.884 7.837,31.891h-103.705c-4.142,0-7.5,3.358-7.5,7.5s3.358,7.5 7.5,7.5h134.67 1.33 16 192 16 1.33 134.67c4.142,0 7.5-3.358 7.5-7.5s-3.358-7.501-7.5-7.501zm-288-177c4.142,0 7.5-3.358 7.5-7.5v-9.919c9.01,5.649 19.437,9.056 30.552,9.39 0.659,0.02 1.315,0.029 1.971,0.029 11.614,0 22.742-3.101 32.477-8.927v9.427c0,4.142 3.358,7.5 7.5,7.5 0.105,0 0.207-0.011 0.311-0.016-1.953,18.497-19.284,33.016-40.311,33.016s-38.358-14.519-40.311-33.016c0.104,0.005 0.206,0.016 0.311,0.016zm-24.5-111.5v-40c0-9.098 7.402-16.5 16.5-16.5 4.142,0 7.5-3.358 7.5-7.5 0-4.687 3.813-8.5 8.5-8.5h64c17.92,0 32.5,14.579 32.5,32.5v40c0,1.442-0.364,2.8-1,3.992v-11.992c0-12.958-10.542-23.5-23.5-23.5h-80c-12.958,0-23.5,10.542-23.5,23.5v11.992c-0.636-1.192-1-2.55-1-3.992zm16-8c0-4.687 3.813-8.5 8.5-8.5h80c4.687,0 8.5,3.813 8.5,8.5v48c0,13.23-5.23,25.593-14.727,34.809-9.493,9.212-22.035,14.065-35.271,13.669-25.917-0.778-47.002-23.579-47.002-50.826v-45.652zm-47.5,296.5c-0.276,0-0.5-0.225-0.5-0.5v-104c0-0.275 0.224-0.5 0.5-0.5h192c0.276,0 0.5,0.225 0.5,0.5v104c0,0.275-0.224,0.5-0.5,0.5h-192zm208,0h-0.525c0.005-0.167 0.025-0.331 0.025-0.5v-104c0-8.547-6.953-15.5-15.5-15.5h-192c-8.547,0-15.5,6.953-15.5,15.5v104c0,0.169 0.02,0.333 0.025,0.5h-0.525-1.33c-7.326,0-14.205-3.237-18.875-8.881-4.67-5.644-6.563-13.007-5.191-20.203l21.252-111.577c1.658-8.706 7.912-15.855 16.32-18.658l44.75-14.917c3.342,25.452 26.757,45.236 55.074,45.236s51.732-19.784 55.075-45.236l44.75,14.916c8.408,2.803 14.662,9.953 16.32,18.659l21.252,111.577c1.371,7.196-0.521,14.56-5.191,20.203-4.67,5.644-11.55,8.881-18.875,8.881h-1.331z"/>
+							  <path d="m255.5,364c-12.958,0-23.5,10.542-23.5,23.5s10.542,23.5 23.5,23.5 23.5-10.542 23.5-23.5-10.542-23.5-23.5-23.5zm0,32c-4.687,0-8.5-3.813-8.5-8.5s3.813-8.5 8.5-8.5 8.5,3.813 8.5,8.5-3.813,8.5-8.5,8.5z"/>
+							</g>
+						  </svg>
+                      </span>
+                                <span class="text-link">Colaboradores</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="icon-card">
+                            <a href="portfolio-owner.html">
+                                <span class="icon">
+						<svg fill="#000000" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+						viewBox="0 0 512 512" xml:space="preserve">
+				   <g>
+					   <g>
+						   <path d="M469.779,94.063H352.573l-9.106-36.426c-4.709-18.832-21.554-31.983-40.962-31.983h-93.011
+							   c-19.408,0-36.253,13.152-40.963,31.984l-9.105,36.425H42.221C18.941,94.063,0,113.003,0,136.284v307.841
+							   c0,23.281,18.941,42.221,42.221,42.221h427.557c23.281,0,42.221-18.941,42.221-42.221V136.284
+							   C512,113.003,493.059,94.063,469.779,94.063z M184.086,61.528c2.922-11.682,13.371-19.841,25.409-19.841h93.011
+							   c12.038,0,22.486,8.159,25.409,19.84l8.133,32.536h-18.732l-7.033-28.132c-0.891-3.569-4.098-6.072-7.777-6.072h-93.011
+							   c-3.678,0-6.885,2.503-7.777,6.072l-7.031,28.132h-18.732L184.086,61.528z M300.789,94.063h-89.578l4.543-18.171h80.492
+							   L300.789,94.063z M42.221,110.096h427.557c8.005,0,15.177,3.614,19.985,9.291l-52.05,156.149
+							   c-4.736,14.208-17.98,23.754-32.957,23.754H289.67v-17.637c0-9.136-7.432-16.568-16.568-16.568h-34.205
+							   c-9.136,0-16.568,7.432-16.568,16.568v17.637H107.243c-14.976,0-28.221-9.546-32.957-23.753l-52.05-156.15
+							   C27.044,113.71,34.216,110.096,42.221,110.096z M238.363,316.393v-34.739c0-0.295,0.239-0.534,0.534-0.534h34.205
+							   c0.295,0,0.534,0.239,0.534,0.534v34.739H238.363z M273.637,332.426v17.637c0,0.295-0.239,0.534-0.534,0.534h-34.205
+							   c-0.295,0-0.534-0.239-0.534-0.534v-17.637H273.637z M495.967,444.125c0,14.44-11.748,26.188-26.188,26.188H42.221
+							   c-14.44,0-26.188-11.748-26.188-26.188V151.481l43.042,129.126c6.922,20.765,26.279,34.717,48.168,34.717H222.33v34.739
+							   c0,9.136,7.432,16.568,16.568,16.568h34.205c9.136,0,16.568-7.432,16.568-16.568v-34.739h115.087
+							   c21.889,0,41.245-13.951,48.168-34.717l43.042-129.126V444.125z"/>
+					   </g>
+				   </g>
+				   </svg>
+                    </span>
+                                <span class="text-link">Propiertario portalio</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br><br>
+
+                <div class="footer">
+                    <a href=""><img src="images/ustlogo.png" /></a>
+                    <div style="float: right; font-size: 11px; text-align: right">
+                        Confidential & Proprietory. &copy; 2023 UST Global Inc.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script>
+            (function($) {
+                $(".dropdown-menu a.dropdown-toggle").on("click", function(e) {
+                    if (!$(this).next().hasClass("show")) {
+                        $(this)
+                            .parents(".dropdown-menu")
+                            .first()
+                            .find(".show")
+                            .removeClass("show");
+                    }
+                    var $subMenu = $(this).next(".dropdown-menu");
+                    $subMenu.toggleClass("show");
+
+                    $(this)
+                        .parents("li.nav-item.dropdown.show")
+                        .on("hidden.bs.dropdown", function(e) {
+                            $(".dropdown-submenu .show").removeClass("show");
+                        });
+
+                    return false;
+                });
+
+
+            })(jQuery);
+        </script>
+</body>
+
+</html>

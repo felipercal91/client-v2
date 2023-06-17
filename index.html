@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html class="h-100">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="kpmgicon.ico" type="image" />
+    <title>Zurich Santander</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      type="text/css"
+      rel="stylesheet"
+    />
+    <link href="css/styles.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="header-wrap">
+      <div id="header-main">
+        <div class="header row toprow">
+          <div class="col-md-3">
+            <a href="index.html"
+              ><img src="images/zurich-santner-logo.jpg"
+            /></a>
+          </div>
+          <div class="col-md-9">
+            <ul class="header_right">
+              <li>
+                <div class="search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Quick Search"
+                  />
+                </div>
+              </li>
+              <li><a href="#" class="newslink">Newsroom</a></li>
+              <li>
+                <select class="selectpicker" data-width="fit">
+                  <option data-content="English">English</option>
+                  <option data-content="Español">Español</option>
+                </select>
+              </li>
+              <li><img src="images/globe.png" /></li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="header-area" class="header_area">
+          <div class="header_bottom">
+            <div class="container">
+              <div class="col-md-12">
+                <nav
+                  role="navigation"
+                  class="navbar navbar-expand-sm navbar-default navbar-light mainmenu"
+                >
+                  <div class="navbar-header">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarCollapse"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <!-- Collection of nav links and other content for toggling -->
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul id="fresponsive" class="nav navbar-nav dropdown">
+                      <li class="active"><a href="index.html">Home</a></li>
+                      <li><a href="my-portfolio.html">My Portfolio</a></li>
+                      <li><a href="process.html">Process & Policies</a></li>
+                      <li><a href="learnings.html">Learnings</a></li>
+                      <li>
+                        <a href="service-management.html">Service Management</a>
+                      </li>
+                      <li><a href="reporting.html">Reporting</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <!-- /.header_bottom -->
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper container">
+      <div class="content row">
+        <div
+          class="col-md-8"
+          style="border-right: 1px solid #ccc; font-size: 20px"
+        >
+          <img src="images/banner.png" class="img-fluid" />
+        </div>
+
+        <div class="col-md-4">
+          <div class="">
+            <a href="blog.html"
+              ><img src="images/banner2.png" class="img-fluid"
+            /></a>
+          </div>
+          <div class="link-Blk">
+            <a href="#"
+              ><img src="images/icon2.png" /> Useful Links
+              <i><img src="images/arrow.png" /></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <a href=""><img src="images/ustlogo.png" /></a>
+        <div style="float: right; font-size: 11px; text-align: right">
+          Confidential & Proprietory. &copy; 2023 UST Global Inc.
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      (function ($) {
+        $(".dropdown-menu a.dropdown-toggle").on("click", function (e) {
+          if (!$(this).next().hasClass("show")) {
+            $(this)
+              .parents(".dropdown-menu")
+              .first()
+              .find(".show")
+              .removeClass("show");
+          }
+          var $subMenu = $(this).next(".dropdown-menu");
+          $subMenu.toggleClass("show");
+
+          $(this)
+            .parents("li.nav-item.dropdown.show")
+            .on("hidden.bs.dropdown", function (e) {
+              $(".dropdown-submenu .show").removeClass("show");
+            });
+
+          return false;
+        });
+
+        $(".selectpicker").on("change", function () {
+          var selectedOption = $(this).find("option:selected").text();
+          if (selectedOption === "Español") {
+            translateToSpanish();
+          } else {
+            translateToEnglish();
+          }
+        });
+
+        function translateToSpanish() {
+          // Change the content to Spanish
+          $("h1").text("Bienvenido");
+          $("a.newslink").text("Sala de prensa");
+          $("li.active > a").text("Inicio");
+          $("li:not(.active) > a[href='my-portfolio.html']").text(
+            "Mi Portafolio"
+          );
+          $("li:not(.active) > a[href='process.html']").text(
+            "Procesos y Políticas"
+          );
+          $("li:not(.active) > a[href='learnings.html']").text("Aprendizaje");
+          $("li:not(.active) > a[href='service-management.html']").text(
+            "Gestión de Servicios"
+          );
+          $("li:not(.active) > a[href='reporting.html']").text("Informes");
+
+          // Optionally, you can update attributes as well
+          $("img").attr("alt", "Descripción en español");
+
+          // Add more attribute updates as needed
+
+          // Add a class to the body to apply specific styling for Spanish content
+          $("body").addClass("español");
+
+          // Store the selected language in local storage
+          localStorage.setItem("selectedLanguage", "español");
+        }
+
+        function translateToEnglish() {
+          // Reset the content to English
+          $("h1").text("Welcome");
+          $("a.newslink").text("Newsroom");
+          $("li.active > a").text("Home");
+          $("li:not(.active) > a[href='my-portfolio.html']").text(
+            "My Portfolio"
+          );
+          $("li:not(.active) > a[href='process.html']").text(
+            "Process & Policies"
+          );
+          $("li:not(.active) > a[href='learnings.html']").text("Learnings");
+          $("li:not(.active) > a[href='service-management.html']").text(
+            "Service Management"
+          );
+          $("li:not(.active) > a[href='reporting.html']").text("Reporting");
+
+          $("li:not(.active) > a[href='reporting.html']").text("Reporting");
+
+          // Reset attributes if needed
+          $("img").attr("alt", "English description");
+
+          // Remove the "español" class from the body
+          $("body").removeClass("español");
+
+          // Store the selected language in local storage
+          localStorage.setItem("selectedLanguage", "english");
+        }
+
+        // Retrieve the selected language from local storage on page load
+        var selectedLanguage = localStorage.getItem("selectedLanguage");
+        if (selectedLanguage === "español") {
+          translateToSpanish();
+        } else {
+          translateToEnglish();
+        }
+      })(jQuery);
+
+      function openchatbox() {
+        var x = document.getElementById("chatboxwrap");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function closechatbox() {
+        var x = document.getElementById("chatboxwrap");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+
+    <div class="chat-button" onclick="openchatbox()"></div>
+    <div id="chatboxwrap" class="chat-boxwrap" style="display: none">
+      <div class="chatcross" onclick="closechatbox()"></div>
+    </div>
+  </body>
+</html>

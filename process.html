@@ -16,96 +16,100 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet" />
     <link href="css/blog.css" type="text/css" rel="stylesheet" />
   </head>
+
   <body>
     <div class="header-wrap">
       <div id="header-main">
         <div class="header row toprow">
-            <div class="col-md-3">
-              <a href="index.html"><img src="images/zurich-santner-logo.jpg" /></a>
-            </div>
-            <div class="col-md-9">
-              <ul class="header_right">
-                <li>
-                  <div class="search">
-                    <input
-                      type="text"
-                      class="form-control"
-                      placeholder="Quick Search"
-                    />
-                  </div>
-                </li>
-                <li><a href="#" class="newslink">Newsroom</a></li>
-                <li>
-                  <select class="selectpicker" data-width="fit">
-                    <option data-content="English">English</option>
-                    <option data-content="Español">Español</option>
-                  </select>
-                </li>
-                <li><img src="images/globe.png" /></li>
-              </ul>
-            </div>
+          <div class="col-md-3">
+            <a href="index.html"
+              ><img src="images/zurich-santner-logo.jpg"
+            /></a>
           </div>
+          <div class="col-md-9">
+            <ul class="header_right">
+              <li>
+                <div class="search">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Búsqueda rápida"
+                  />
+                </div>
+              </li>
+              <li><a href="#" class="newslink">Sala de Prensa</a></li>
+              <li>
+                <select class="selectpicker" data-width="fit">
+                  <option data-content="Inglés">Inglés</option>
+                  <option data-content="Español">Español</option>
+                </select>
+              </li>
+              <li><img src="images/globe.png" /></li>
+            </ul>
+          </div>
+        </div>
 
-          <div id="header-area" class="header_area">
-            <div class="header_bottom">
-              <div class="container">
-                   <div class="col-md-12">
-                    <nav
-                    role="navigation"
-                    class="navbar navbar-expand-sm navbar-default navbar-light mainmenu"
-                  >
-                    <div class="navbar-header">
-                      <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-toggle="collapse"
-                        data-target="#navbarCollapse"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                      >
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                    </div>
-                    <!-- Collection of nav links and other content for toggling -->
-                    <div id="navbarCollapse" class="collapse navbar-collapse">
-                      <ul id="fresponsive" class="nav navbar-nav dropdown">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="my-portfolio.html">My Portfolio</a></li>
-                        <li class="active"><a href="process.html">Process & Policies</a></li>
-                        <li><a href="learnings.html">Learnings</a></li>
-                        <li><a href="service-management.html">Service Management</a></li>
-                        <li><a href="reporting.html">Reporting</a></li>
-                      </ul>
-                    </div>
-                  </nav>
-                   </div>
+        <div id="header-area" class="header_area">
+          <div class="header_bottom">
+            <div class="container">
+              <div class="col-md-12">
+                <nav
+                  role="navigation"
+                  class="navbar navbar-expand-sm navbar-default navbar-light mainmenu"
+                >
+                  <div class="navbar-header">
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-toggle="collapse"
+                      data-target="#navbarCollapse"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Alternar navegación"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  </div>
+                  <!-- Colección de enlaces de navegación y otro contenido para alternar -->
+                  <div id="navbarCollapse" class="collapse navbar-collapse">
+                    <ul id="fresponsive" class="nav navbar-nav dropdown">
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="my-portfolio.html">Mi Portafolio</a></li>
+                      <li class="active">
+                        <a href="process.html">Procesos y Políticas</a>
+                      </li>
+                      <li><a href="learnings.html">Aprendizajes</a></li>
+                      <li>
+                        <a href="service-management.html"
+                          >Gestión de Servicios</a
+                        >
+                      </li>
+                      <li><a href="reporting.html">Informes</a></li>
+                    </ul>
+                  </div>
+                </nav>
               </div>
             </div>
-            <!-- /.header_bottom -->
           </div>
-
+          <!-- /.header_bottom -->
+        </div>
+      </div>
     </div>
-</div>
 
     <div class="fullpage-wrap">
       <div class="wrapper container">
         <div class="content">
-           <div class="breads">
-              Home >  Process & Policies
+          <div class="breads">Inicio > Procesos y Políticas</div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">-</div>
             </div>
-            <div class="container">
-
-              <div class="row">
-                  <div class="col-md-12">-</div>
-              </div>
-
-            </div>
+          </div>
         </div>
         <div class="footer">
           <a href=""><img src="images/ustlogo.png" /></a>
           <div style="float: right; font-size: 11px; text-align: right">
-            Confidential & Proprietory. &copy; 2023 UST Global Inc.
+            Confidencial y Propietario. &copy; 2023 UST Global Inc.
           </div>
         </div>
       </div>
@@ -125,17 +129,13 @@
           }
           var $subMenu = $(this).next(".dropdown-menu");
           $subMenu.toggleClass("show");
-
           $(this)
             .parents("li.nav-item.dropdown.show")
             .on("hidden.bs.dropdown", function (e) {
               $(".dropdown-submenu .show").removeClass("show");
             });
-
           return false;
         });
-
-
       })(jQuery);
     </script>
   </body>

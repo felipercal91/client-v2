@@ -72,14 +72,14 @@
                   <!-- Collection of nav links and other content for toggling -->
                   <div id="navbarCollapse" class="collapse navbar-collapse">
                     <ul id="fresponsive" class="nav navbar-nav dropdown">
-                      <li class="active"><a href="index.html">Home</a></li>
-                      <li><a href="my-portfolio.html">My Portfolio</a></li>
-                      <li><a href="process.html">Process & Policies</a></li>
-                      <li><a href="learnings.html">Learnings</a></li>
+                      <li><a href="index.html">Inicio</a></li>
+                      <li><a href="my-portfolio.html">Mi Portafolio</a></li>
+                      <li><a href="process.html">Procesos & Politicas</a></li>
+                      <li><a href="learnings.html">Aprendizaje</a></li>
                       <li>
-                        <a href="service-management.html">Service Management</a>
+                        <a href="service-management.html">Gestion de Servicios</a>
                       </li>
-                      <li><a href="reporting.html">Reporting</a></li>
+                      <li class="active"><a href="reporting.html">Informes</a></li>
                     </ul>
                   </div>
                 </nav>
@@ -97,9 +97,7 @@
           class="col-md-8"
           style="border-right: 1px solid #ccc; font-size: 20px"
         >
-          <h1 style="text-align: center; font-size: 36px; margin-top: 150px">
-            Esta página se encuentra en construcción
-          </h1>
+          <img src="images/report-example.jpg" class="img-fluid"/>
         </div>
 
         <div class="col-md-4">
@@ -159,9 +157,7 @@
 
         function translateToSpanish() {
           // Change the content to Spanish
-          $("h1").text("Sitio en Construcción.");
           $("a.newslink").text("Sala de prensa");
-          $("li.active > a").text("Inicio");
           $("li:not(.active) > a[href='my-portfolio.html']").text(
             "Mi Portafolio"
           );
